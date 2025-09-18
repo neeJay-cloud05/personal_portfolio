@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "5mGt3ThSCwetYSyhV",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_g5rr1hp', 'template_bn363x3', this)
+                    .then(() => {
+                        // console.log('SUCCESS!');
+                    }, (error) => {
+                        // console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
     <title>Jeryll</title>
 </head>
+
 <body>
     <div class="container">
 
@@ -26,7 +50,7 @@
                     <li>
                         <a href="#contact_me">#contact_me</a>
                     </li>
-                    
+
                 </nav>
             </div>
         </div>
@@ -40,10 +64,10 @@
                     <h4>I aim to develop robust web apps with scalable backend</h4>
                 </div>
                 <div class="image">
-                <div class="vector"></div>
+                    <div class="vector"></div>
 
                     <img class="img" src="2x2.jpg" alt="">
-                </div>   
+                </div>
 
             </div>
 
@@ -52,8 +76,11 @@
                     about_me
                 </div>
                 <div class="paragraphs">
-                    <p>Hi! I'm Jeryll Zita, a web developer from Bulacan, Philippines. I specialize in backend development with PHP and Laravel, but I'm also comfortable with frontend work and adapting to various tools as needed. </p>
-                    <p>I'm currently open to opportunities where I can grow, solve challenges, and keep learning. Let’s connect!</p>
+                    <p>Hi! I'm Jeryll Zita, a web developer from Bulacan, Philippines. I specialize in backend
+                        development with PHP and Laravel, but I'm also comfortable with frontend work and adapting to
+                        various tools as needed. </p>
+                    <p>I'm currently open to opportunities where I can grow, solve challenges, and keep learning. Let’s
+                        connect!</p>
                 </div>
 
                 <div class="prog_and_tools">
@@ -67,12 +94,69 @@
                     </div>
                     <div class="tools">
                         <div class="s">HTML & CSS</div>
-                        <div class="s">javascript</div>
+                        <div class="s">Javascript</div>
                     </div>
                 </div>
             </div>
+
+            <div class="projects" id="projects">
+                <div class="project_title">
+                    projects
+                </div>
+
+                <div class="my_project">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+
+            <div class="contact_me">
+                <div class="contact_me_title">
+                    contact_me
+                </div>
+
+                <p style="font-weight: bold; font-size: 1.2rem; color: #fff; text-shadow: 0 2px 3px rgba(0,0,0,0.3);">
+                    Connect with me</p>
+
+                <div class="contact_me_page">
+                    <div class="socials">
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i> jeryllzita55@gmail.com
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i>
+                                neejay_cloud05</a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"><i
+                                    class="fab fa-linkedin"></i> Jeryll Zita</a>
+                        </div>
+                    </div>
+
+                    <div class="email_me">
+                        <form class="email_me" id="contact-form">
+                            <!-- To simplify the tutorial, the value is static. -->
+                            <input type="hidden" name="time" value="Mar 10 2025 08:46">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                            <label>Subject</label>
+                            <input type="text" name="title" required>
+                            <label>Message</label>
+                            <textarea name="message" required></textarea>
+                            <input id="submit" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 </body>
+
 </html>
