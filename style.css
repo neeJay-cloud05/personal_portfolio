@@ -1,9 +1,14 @@
 body {
     display: block;
+
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     background: #0D1117;
+    overflow-y: auto;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -62,6 +67,7 @@ li {
     padding-left: 10%;
     padding-right: 25%;
     padding-top: 10%;
+    height: 70vh;
 }
 
 .intro {
@@ -76,4 +82,33 @@ li {
     border: 2px solid #3BB3C0;
     border-radius: 10px;
 
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.about_me_title {
+    font-size: 1.2rem;
+    background: #0D1117;
+    border-radius: 7px;
+    border: 1px solid #2D343C;
+    padding: 1vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.paragraphs {
+    font-size: 1.3rem;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    text-align: center;
+    align-items: center;
 }
