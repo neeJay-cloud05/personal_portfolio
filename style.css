@@ -111,4 +111,36 @@ li {
     margin-top: 8vh;
     text-align: center;
     align-items: center;
+
+}
+
+.prog_and_tools {
+    margin-top: 8vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.prog_and_tools span {
+    background: linear-gradient(90deg, #D8E3FD, #7499F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vh;
+    margin-top: 5vh;
+    
+}
+
+.s{
+    background: #21293B;
+    border-radius: 7px;
+    border: 1px solid #2D343C;
+    padding: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
 }
