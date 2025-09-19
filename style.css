@@ -98,12 +98,16 @@ li {
 .contact_me_title {
     font-size: 1.2rem;
     background: #0D1117;
+    background: linear-gradient(160deg, #0D1117, #0f172a);
+
     border-radius: 7px;
     border: 1px solid #2D343C;
     padding: 1vh;
     padding-left: 10vh;
     padding-right: 10vh;
 }
+
+
 
 .project_title {
     margin-top: 10vh;
@@ -252,4 +256,21 @@ textarea {
     margin-top: 5vh;
     width: 20vh;
     height: 5vh;
+}
+
+.notif {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    width: 50vh;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+}
+
+.notif i{
+    padding-right: 3vh;
 }

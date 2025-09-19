@@ -14,19 +14,7 @@
             });
         })();
     </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                emailjs.sendForm('service_g5rr1hp', 'template_bn363x3', this)
-                    .then(() => {
-                        // console.log('SUCCESS!');
-                    }, (error) => {
-                        // console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+
 
     <title>Jeryll</title>
 </head>
@@ -120,7 +108,7 @@
                 <p style="font-weight: bold; font-size: 1.2rem; color: #fff; text-shadow: 0 2px 3px rgba(0,0,0,0.3);">
                     Connect with me</p>
 
-                <div class="contact_me_page" >
+                <div class="contact_me_page">
                     <div class="socials">
                         <div class="email">
                             <i class="fa-solid fa-envelope"></i> jeryllzita55@gmail.com
@@ -156,7 +144,38 @@
 
         </div>
 
+        <div class="notif" id="notif">
+
+            <div>
+                <i class="fa-solid fa-paper-plane"></i>Email sent!
+            </div>
+        </div>
+
     </div>
 </body>
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            const notif_div = document.getElementById("notif");
+            event.preventDefault();
+            emailjs.sendForm('service_g5rr1hp', 'template_bn363x3', this)
+                .then(() => {
+                    console.log('SUCCESS!');
+                    notif_div.style.display = "block";
+                    document.getElementById('contact-form').reset();
+
+                    setTimeout(() => {
+                        notif_div.style.display = "none";
+
+                    }, 7000);
+
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    notif_div.style.display = "none";
+
+                });
+        });
+    }
+</script>
 
 </html>
