@@ -223,7 +223,8 @@ li {
 
 }
 
-.email_me input:not(#submit), textarea{
+.email_me input:not(#submit),
+textarea {
     margin-top: 1vh;
     height: 5vh;
     width: 50vh;
@@ -232,7 +233,8 @@ li {
     border-radius: 6px;
     font-size: 16px;
     background-color: #1e1e2f;
-
+    color: antiquewhite;
+    font-size: .9rem;
 
 }
 
@@ -241,5 +243,13 @@ li {
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
+    min-height: 5vh;
+    color: antiquewhite;
+}
+
+#submit {
+    margin-top: 5vh;
+    width: 20vh;
+    height: 5vh;
 }
