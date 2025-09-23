@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     background: #0D1117;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 html {
@@ -13,8 +13,17 @@ html {
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
+
+.title span {
+    background: linear-gradient(240deg, #D8E3FD, #7499F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+h1 span {}
 
 .container {}
 
@@ -22,7 +31,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60%;
+    gap: 100vh;
     margin: 5vh;
     background: #0D1117;
     border-radius: 10px;
@@ -31,7 +40,7 @@ h3 {
 
 .title {
     margin: 10px;
-    padding-left: 3%;
+    padding-left: 10vh;
     color: aliceblue;
     font-size: 20px;
 }
@@ -44,7 +53,7 @@ h3 {
 nav {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
 
 }
 
@@ -90,7 +99,7 @@ li {
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .about_me_title,
@@ -98,7 +107,7 @@ li {
 .contact_me_title {
     font-size: 1.2rem;
     background: #0D1117;
-    background: linear-gradient(160deg, #0D1117, #0f172a);
+    /* background: linear-gradient(160deg, #0D1117, #0f172a); */
 
     border-radius: 7px;
     border: 1px solid #2D343C;
@@ -173,7 +182,7 @@ li {
     gap: 10vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .project {
@@ -192,7 +201,6 @@ li {
     align-items: center;
     color: aliceblue;
     background: linear-gradient(90deg, #0D1117, #0f172a);
-    height: 100vh;
 
 }
 
@@ -271,6 +279,136 @@ textarea {
     display: none;
 }
 
-.notif i{
+.notif i {
     padding-right: 3vh;
+}
+
+.connectwme {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contact_me_page {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    /* font-weight: 300; */
+    font-style: normal;
+}
+
+.contact_me_title,
+.about_me_title,
+.project_title {
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+
+.navbar a {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.button_div {
+    padding-top: 3vh;
+}
+
+/* Button */
+.get_touch {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7499F6, #3BB3C0);
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.get_touch:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.email_me_div {
+    padding-bottom: 5vh;
+}
+
+@media (max-width: 575.98px) {
+
+    .nav {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .paragraphs {
+        font-size: 1.1rem;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        margin-top: 8vh;
+    }
+
+    .tools {
+        gap: 1vh;
+    }
+
+    .s {
+        font-size: 1rem;
+    }
+
+    .my_project {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+    }
+
+    .project_ {
+        display: none;
+    }
+
+    .contact_me_page {
+        display: block;
+        padding-left: -5vh;
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        margin-top: 1vh;
+        height: 5vh;
+        width: 48vh;
+        font-size: 1rem;
+
+    }
+
+    .contact_me_page {
+
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .projects {
+        height: 100%;
+
+    }
+
+    .contact_me_title{
+        margin-top: 5vh;
+    }
+
 }

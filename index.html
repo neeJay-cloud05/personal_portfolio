@@ -13,9 +13,13 @@
                 publicKey: "5mGt3ThSCwetYSyhV",
             });
         })();
+
     </script>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap&family=Alan+Sans:wght@300..900&family=Titan+One&display=swap"
+        rel="stylesheet">
     <title>Jeryll</title>
 </head>
 
@@ -23,7 +27,7 @@
     <div class="container">
 
         <div class="top_bar">
-            <div class="title">JBZ</div>
+            <div class="title"><span>JB</span>Z</div>
             <div class="nav">
                 <nav class="navbar">
                     <li>
@@ -46,10 +50,12 @@
         <div class="content">
             <div class="home">
                 <div class="intro">
-                    <h1>Hey, I'm Jeryll.</h1>
+                    <h1>Hey, I'm <span>Jeryll</span>.</h1>
                     <h3>I'm a web developer</h3>
-                    &nbsp;
-                    <h4>I aim to develop robust web apps with scalable backend</h4>
+                    <h4>I aim to develop robust web apps with scalable backend.</h4>
+                    <div class="button_div">
+                        <button class="get_touch">Get in touch --></button>
+                    </div>
                 </div>
                 <div class="image">
                     <div class="vector"></div>
@@ -105,7 +111,7 @@
                     contact_me
                 </div>
 
-                <p style="font-weight: bold; font-size: 1.2rem; color: #fff; text-shadow: 0 2px 3px rgba(0,0,0,0.3);">
+                <p class="connectwme">
                     Connect with me</p>
 
                 <div class="contact_me_page">
@@ -123,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="email_me">
+                    <div class="email_me_div">
                         <form class="email_me" id="contact-form">
                             <!-- To simplify the tutorial, the value is static. -->
                             <!-- <input type="hidden" name="time" value="Mar 10 2025 08:46"> -->
@@ -144,6 +150,8 @@
 
         </div>
 
+        <footer>C Jeryll</footer>
+
         <div class="notif" id="notif">
 
             <div>
@@ -155,12 +163,16 @@
 </body>
 <script type="text/javascript">
     window.onload = function () {
+
+        const limit = 2;
+        const sent = localStorage.setItem("email_sent") || 0;
+
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             const notif_div = document.getElementById("notif");
             event.preventDefault();
             emailjs.sendForm('service_g5rr1hp', 'template_bn363x3', this)
                 .then(() => {
-                    console.log('SUCCESS!');
+                    // console.log('SUCCESS!');
                     notif_div.style.display = "block";
                     document.getElementById('contact-form').reset();
 
@@ -170,11 +182,19 @@
                     }, 7000);
 
                 }, (error) => {
-                    console.log('FAILED...', error);
-                    notif_div.style.display = "none";
+                    // console.log('FAILED...', error);
+                    notif_div.style.display = "block";
+                    notif_div.textContent = "Message not sent";
+
+                    setTimeout(() => {
+                        notif_div.style.display = "none";
+
+                    }, 7000);
 
                 });
         });
+
+
     }
 </script>
 
