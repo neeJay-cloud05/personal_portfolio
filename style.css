@@ -99,7 +99,6 @@ li {
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    /* height: 90vh; */
 }
 
 .about_me_title,
@@ -357,7 +356,7 @@ textarea {
 @media (max-width: 575.98px) {
 
     .home {
-        height: 45vh;
+        height: 60vh;
         padding-top: 10vh;
     }
 
@@ -371,6 +370,10 @@ textarea {
 
     .intro {
         font-size: 1.2rem;
+    }
+
+    .about_me {
+        height: 70vh;
     }
 
     .paragraphs {
@@ -402,13 +405,15 @@ textarea {
     }
 
     .contact_me_page {
+
         display: block;
-        /* padding-left: 10vw; */
+        margin-left: 25vh;
     }
+
 
     .email_me input:not(#submit),
     textarea {
-        margin-top: 1vh;
+        /* margin-top: 1vh; */
         height: 3vh;
         width: 50vw;
         font-size: 1rem;
@@ -416,19 +421,7 @@ textarea {
 
     }
 
-
-
-    .contact_me_page {
-
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-
-    .projects {
-        height: 100%;
-
-    }
+    
 
     #submit {
         width: 10vh;
@@ -437,13 +430,14 @@ textarea {
         font-weight: 300;
     }
 
-    .project{
+    .project {
         height: 25vh;
         width: 25vh;
     }
 
 
 }
+
 
 /* Phones up to */
 @media (min-width: 576px) {
