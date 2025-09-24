@@ -30,9 +30,8 @@ h1 span {}
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 auto;
 
-    max-width: min(1400px, 95vw);
 }
 
 .top_bar {
@@ -194,15 +193,7 @@ li {
 
 }
 
-.contact_me_page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
 
-}
 
 .socials {
     margin-top: 3vh;
@@ -491,7 +482,7 @@ textarea {
     textarea {
         margin-top: 1vh;
         height: 5vh;
-        width: 20vh;
+        width: 40vh;
         font-size: 1rem;
         letter-spacing: 0.5px;
 
@@ -634,6 +625,15 @@ textarea {
         padding-bottom: 10vh;
     }
 
+    .contact_me_page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
     .project {
         width: 30vh;
         height: 30vh;
@@ -643,13 +643,21 @@ textarea {
     .email_me input:not(#submit),
     textarea {
         height: 3vh;
-        width: 50vh;
+        width: 10vw;
+        font-size: 1rem;
     }
 
     #submit {
         margin-top: 5vh;
         width: 10vh;
         height: 4vh;
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        height: 3vh;
+        width: 100%;
+        font-size: 1rem;
     }
 
 }
@@ -662,7 +670,7 @@ textarea {
     }
 
     .paragraphs {
-        
+
         display: flex;
         flex-direction: column;
         margin-top: 8vh;
@@ -681,11 +689,45 @@ textarea {
         padding-right: 4vh;
     }
 
+    .my_project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
 
+    .project {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .contact_me_page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    #submit {
+        width: 15vh;
+        height: 5vh;
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        height: 3vh;
+        width: 50vh;
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1400px) {
     .home {
         height: 40vh;
     }
+
+
 }
