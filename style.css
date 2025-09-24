@@ -31,7 +31,6 @@ h1 span {}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 100vh;
     margin: 5vh;
     background: #0D1117;
     border-radius: 10px;
@@ -45,16 +44,8 @@ h1 span {}
     font-size: 20px;
 }
 
-.nav {
-    width: 100vh;
-
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
+nav{
+    padding-right: 1vh;
 }
 
 li,
@@ -609,6 +600,23 @@ textarea {
         /* -top: 1vh; */
         /* padding-left: 15vh; */
     }
+
+    .top_bar {
+        
+        gap: 50vh;
+        background: #0D1117;
+        border-radius: 10px;
+        border: 1px solid #2D343C;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+    }
+
 
     .image {
         display: block;
