@@ -356,6 +356,11 @@ textarea {
 /* Less than */
 @media (max-width: 575.98px) {
 
+    .home {
+        height: 45vh;
+        padding-top: 10vh;
+    }
+
     .nav {
         display: none;
     }
@@ -386,7 +391,7 @@ textarea {
 
     .my_project {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10vh;
+        gap: 5vh;
         padding-top: 10vh;
         padding-bottom: 10vh;
 
@@ -398,14 +403,14 @@ textarea {
 
     .contact_me_page {
         display: block;
-        padding-left: -5vh;
+        /* padding-left: 10vw; */
     }
 
     .email_me input:not(#submit),
     textarea {
         margin-top: 1vh;
-        height: 5vh;
-        width: 48vh;
+        height: 3vh;
+        width: 50vw;
         font-size: 1rem;
         letter-spacing: 0.5px;
 
@@ -425,6 +430,17 @@ textarea {
 
     }
 
+    #submit {
+        width: 10vh;
+        height: 5vh;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .project{
+        height: 25vh;
+        width: 25vh;
+    }
 
 
 }
@@ -483,7 +499,7 @@ textarea {
     textarea {
         margin-top: 1vh;
         height: 5vh;
-        width: 48vh;
+        width: 20vh;
         font-size: 1rem;
         letter-spacing: 0.5px;
 
@@ -491,6 +507,7 @@ textarea {
 
     .email_me_div {
         margin-top: 2vh;
+        /* margin-right: 50vw; */
     }
 
     .contact_me_page {
@@ -606,8 +623,8 @@ textarea {
 
 @media (min-width: 1200px) {
 
-    
-    .home{
+
+    .home {
         height: 70vh;
     }
 }
