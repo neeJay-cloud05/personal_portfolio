@@ -3,7 +3,8 @@ body {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     background: #0D1117;
-    /* overflow-y: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html {
@@ -25,7 +26,14 @@ h3 {
 
 h1 span {}
 
-.container {}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    max-width: min(1400px, 95vw);
+}
 
 .top_bar {
     display: flex;
@@ -44,7 +52,7 @@ h1 span {}
     font-size: 20px;
 }
 
-nav{
+nav {
     padding-right: 1vh;
 }
 
@@ -116,17 +124,6 @@ li {
 
 }
 
-.paragraphs {
-    font-size: 1.3rem;
-    padding-left: 30vh;
-    padding-right: 30vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8vh;
-    text-align: center;
-    align-items: center;
-
-}
 
 .prog_and_tools {
     margin-top: 8vh;
@@ -602,8 +599,8 @@ textarea {
     }
 
     .top_bar {
-        
-        gap: 50vh;
+
+        gap: 35vh;
         background: #0D1117;
         border-radius: 10px;
         border: 1px solid #2D343C;
@@ -662,5 +659,33 @@ textarea {
 
     .home {
         height: 70vh;
+    }
+
+    .paragraphs {
+        
+        display: flex;
+        flex-direction: column;
+        margin-top: 8vh;
+        text-align: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding-left: 30vh;
+        padding-right: 30vh;
+    }
+
+    .about_me {
+        height: 100vh;
+    }
+
+    nav {
+        padding-right: 4vh;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .home {
+        height: 40vh;
     }
 }
