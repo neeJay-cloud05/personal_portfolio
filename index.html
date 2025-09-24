@@ -28,6 +28,7 @@
 
         <div class="top_bar">
             <div class="title"><span>JB</span>Z</div>
+            
             <div class="nav">
                 <nav class="navbar">
                     <li>
@@ -45,6 +46,8 @@
 
                 </nav>
             </div>
+
+           
         </div>
 
         <div class="content">
@@ -164,8 +167,8 @@
 <script type="text/javascript">
     window.onload = function () {
 
-        const limit = 2;
-        const sent = localStorage.setItem("email_sent") || 0;
+        // const limit = 2;
+        // const sent = localStorage.setItem("email_sent") || 0;
 
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             const notif_div = document.getElementById("notif");

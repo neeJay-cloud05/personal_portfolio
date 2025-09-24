@@ -75,7 +75,7 @@ li {
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 25%;
-    padding-top: 10%;
+    padding-top: 15vh;
     height: 70vh;
 }
 
@@ -116,7 +116,10 @@ li {
     padding-right: 10vh;
 }
 
+.contact_me_title {
+    margin-top: 5vh;
 
+}
 
 .project_title {
     margin-top: 10vh;
@@ -340,8 +343,172 @@ textarea {
     padding-bottom: 5vh;
 }
 
+#submit {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Less than */
 @media (max-width: 575.98px) {
 
+    .nav {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .paragraphs {
+        font-size: 1.1rem;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        margin-top: 8vh;
+    }
+
+
+    .tools {
+        gap: 1vh;
+    }
+
+    .s {
+        font-size: 1rem;
+    }
+
+    .my_project {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+    }
+
+    .project_ {
+        display: none;
+    }
+
+    .contact_me_page {
+        display: block;
+        padding-left: -5vh;
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        margin-top: 1vh;
+        height: 5vh;
+        width: 48vh;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+
+    }
+
+
+
+    .contact_me_page {
+
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .projects {
+        height: 100%;
+
+    }
+
+
+
+}
+
+/* Phones up to */
+@media (min-width: 576px) {
+    .nav {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .home {
+        height: 50vh;
+    }
+
+    .paragraphs {
+        font-size: 1.1rem;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        margin-top: 8vh;
+    }
+
+    .tools {
+        gap: 1vh;
+    }
+
+    .s {
+        font-size: 1rem;
+    }
+
+    .my_project {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+    }
+
+    .project_ {
+        display: none;
+    }
+
+    .contact_me_page {
+        display: block;
+        padding-left: -5vh;
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        margin-top: 1vh;
+        height: 5vh;
+        width: 48vh;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+
+    }
+
+    .email_me_div {
+        margin-top: 2vh;
+    }
+
+    .contact_me_page {
+
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .projects {
+        height: 100%;
+
+    }
+
+}
+
+/* Medium devices, Tablets, up to */
+@media (min-width: 768px) {
     .nav {
         display: none;
     }
@@ -392,7 +559,12 @@ textarea {
         height: 5vh;
         width: 48vh;
         font-size: 1rem;
+        letter-spacing: 0.5px;
 
+    }
+
+    .email_me_div {
+        margin-top: 2vh;
     }
 
     .contact_me_page {
@@ -407,8 +579,35 @@ textarea {
 
     }
 
-    .contact_me_title{
-        margin-top: 5vh;
+}
+
+/* Large Devices desktops and up */
+@media (min-width: 992px) {
+
+    .home {
+        /* -top: 1vh; */
+        /* padding-left: 15vh; */
+        /* height: 70vh; */
     }
 
+    .image {
+        display: block;
+        padding-top: 5vh;
+        padding-left: 1vh;
+    }
+
+    .paragraphs {
+        padding-left: 12vh;
+        padding-right: 12vh;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    
+    .home{
+        height: 70vh;
+    }
 }
