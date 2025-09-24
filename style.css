@@ -355,8 +355,12 @@ textarea {
 @media (max-width: 575.98px) {
 
     .home {
-        height: 60vh;
+        height: 70vh;
         padding-top: 10vh;
+    }
+
+    .title {
+        padding-left: 1vh;
     }
 
     .nav {
@@ -419,10 +423,10 @@ textarea {
 
     }
 
-    .email_me{
+    .email_me {
         width: 0;
     }
-    
+
 
     #submit {
         width: 10vh;
@@ -452,6 +456,11 @@ textarea {
 
     .intro {
         font-size: 1.2rem;
+
+    }
+
+    .title {
+        padding-left: 1vh;
     }
 
     .home {
@@ -599,13 +608,12 @@ textarea {
     .home {
         /* -top: 1vh; */
         /* padding-left: 15vh; */
-        /* height: 70vh; */
     }
 
     .image {
         display: block;
         padding-top: 5vh;
-        padding-left: 1vh;
+        padding-left: 10vh;
     }
 
     .paragraphs {
@@ -613,6 +621,31 @@ textarea {
         padding-right: 12vh;
     }
 
+    .my_project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .project {
+        width: 30vh;
+        height: 30vh;
+
+    }
+
+    .email_me input:not(#submit),
+    textarea {
+        height: 3vh;
+        width: 50vh;
+    }
+
+    #submit {
+        margin-top: 5vh;
+        width: 10vh;
+        height: 4vh;
+    }
 
 }
 
