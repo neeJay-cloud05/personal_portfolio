@@ -330,6 +330,27 @@ textarea {
     cursor: pointer;
 }
 
+footer {
+    display: block;
+    height: 10vh;
+    background: linear-gradient(90deg, #0D1117, #0f172a);
+    color: #fff;
+    padding-top: 10vh;
+}
+
+.footer, .credit_to {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.credit,
+.icons {
+    margin-left: 2vh;
+}
+
 /* Less than */
 @media (max-width: 575.98px) {
 
@@ -419,7 +440,9 @@ textarea {
         width: 25vh;
     }
 
-
+    footer {
+        font-size: .8rem;
+    }
 }
 
 
