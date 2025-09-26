@@ -81,6 +81,25 @@ li {
     color: aliceblue;
 }
 
+.socials_intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vh;
+    width: 4vw;
+}
+
+.socials_intro i {
+    font-size: 1.7rem;
+
+}
+
+.socials_intro i:hover {
+    color: #3BB3C0;
+    transform: scale(1.2);
+    transition: color 0.3s ease;
+}
+
 .image {}
 
 .img {
@@ -314,6 +333,8 @@ textarea {
 .get_touch:hover {
     cursor: pointer;
     opacity: 0.9;
+        text-shadow: none;
+
 }
 
 .email_me_div {
@@ -323,11 +344,19 @@ textarea {
 #submit {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
-    background: #007bff;
+    background: linear-gradient(90deg, #7499F6, #3BB3C0);
     color: #fff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+
+#submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    text-shadow: none;
 }
 
 footer {
@@ -338,7 +367,8 @@ footer {
     padding-top: 10vh;
 }
 
-.footer, .credit_to {
+.footer,
+.credit_to {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -431,7 +461,7 @@ footer {
     #submit {
         width: 10vh;
         height: 5vh;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 300;
     }
 
