@@ -333,7 +333,7 @@ textarea {
 .get_touch:hover {
     cursor: pointer;
     opacity: 0.9;
-        text-shadow: none;
+    text-shadow: none;
 
 }
 
@@ -353,7 +353,7 @@ textarea {
     cursor: pointer;
 }
 
-#submit:hover{
+#submit:hover {
     cursor: pointer;
     opacity: 0.9;
     text-shadow: none;
@@ -751,8 +751,8 @@ footer {
     }
 
     .project {
-        width: 40vh;
-        height: 40vh;
+        width: 30vh;
+        height: 30vh;
     }
 
     .contact_me_page {
@@ -765,7 +765,7 @@ footer {
     }
 
     #submit {
-        width: 15vh;
+        width: 10vh;
         height: 5vh;
     }
 
@@ -775,6 +775,8 @@ footer {
         width: 50vh;
         font-size: 1rem;
     }
+
+
 }
 
 @media (min-width: 1400px) {
@@ -782,5 +784,24 @@ footer {
         height: 40vh;
     }
 
+    .email_me input:not(#submit),
+    textarea {
+        width: auto;
+    }
+
+    #submit {
+        width: 10vh;
+        height: 5vh;
+    }
+
+}
+
+/* for zooming out as well */
+@media (min-width: 4200px) {
+   
+    #submit {
+        width: 6vh;
+        height: 3vh;
+    }
 
 }
