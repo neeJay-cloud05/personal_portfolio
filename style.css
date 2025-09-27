@@ -381,6 +381,8 @@ footer {
     margin-left: 2vh;
 }
 
+
+
 /* Less than */
 @media (max-width: 575.98px) {
 
@@ -405,9 +407,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .about_me {
-        height: 70vh;
-    }
+
 
     .paragraphs {
         font-size: 1.1rem;
@@ -460,9 +460,8 @@ footer {
 
     #submit {
         width: 10vh;
-        height: 5vh;
-        font-size: .8rem;
-        font-weight: 300;
+        height: 4vh;
+        font-size: .7rem;
     }
 
     .project {
@@ -482,6 +481,7 @@ footer {
         display: none;
     }
 
+
     .image {
         display: none;
     }
@@ -496,7 +496,7 @@ footer {
     }
 
     .home {
-        height: 50vh;
+        height: 100vh;
     }
 
     .paragraphs {
@@ -535,7 +535,7 @@ footer {
     textarea {
         margin-top: 1vh;
         height: 5vh;
-        width: 40vh;
+        width: 40vw;
         font-size: 1rem;
         letter-spacing: 0.5px;
 
@@ -558,6 +558,11 @@ footer {
 
     }
 
+    #submit {
+        width: 10vw;
+        height: 6vh;
+    }
+
 }
 
 /* Medium devices, Tablets, up to */
@@ -572,6 +577,11 @@ footer {
 
     .intro {
         font-size: 1.2rem;
+    }
+
+    .home {
+        height: 50vh;
+
     }
 
     .paragraphs {
@@ -632,19 +642,23 @@ footer {
 
     }
 
+    #submit {
+        width: 15vw;
+        height: 4vh;
+    }
+
 }
 
 /* Large Devices desktops and up */
 @media (min-width: 992px) {
 
     .home {
-        /* -top: 1vh; */
-        /* padding-left: 15vh; */
+        height: 55vh;
     }
 
     .top_bar {
 
-        gap: 35vh;
+        gap: 30vh;
         background: #0D1117;
         border-radius: 10px;
         border: 1px solid #2D343C;
@@ -702,7 +716,7 @@ footer {
 
     #submit {
         margin-top: 5vh;
-        width: 10vh;
+        width: 9vw;
         height: 4vh;
     }
 
@@ -798,7 +812,7 @@ footer {
 
 /* for zooming out as well */
 @media (min-width: 4200px) {
-   
+
     #submit {
         width: 6vh;
         height: 3vh;
