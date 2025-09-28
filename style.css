@@ -57,9 +57,12 @@ h1 span {}
     font-size: 1.5rem;
 }
 
+/* 
 nav {
-    padding-right: 1vh;
-}
+    padding-right: 10vh;
+} */
+
+
 
 li,
 a {
@@ -402,13 +405,31 @@ footer {
     }
 
     li {
-        display: none;
+        font-size: .7rem;
     }
 
     .hamburger {
         display: block;
         margin-right: 3vw;
         padding-top: 1vh;
+    }
+
+    .navbar {
+        position: absolute;
+        flex-direction: row;
+        top: 90px;
+        right: 5vh;
+        left: 50;
+        border: 1px solid #2D343C;
+        border-radius: 5px;
+        /* width: 70vw; */
+        display: none;
+        /* padding: vh; */
+        background-color: #0D1117;
+    }
+
+    .navbar.active {
+        display: flex;
     }
 
     .image {
@@ -484,7 +505,6 @@ footer {
         font-size: .8rem;
     }
 }
-
 
 /* Phones up to */
 @media (min-width: 576px) {
@@ -822,8 +842,8 @@ footer {
     }
 
     #submit {
-         width: 6vw;
-        height: 4vh;
+        width: 6vw;
+        height: 5vh;
     }
 
     .email_me input:not(#submit),

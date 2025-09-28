@@ -31,7 +31,7 @@
             <div class="title"><span>JB</span>Z</div>
 
             <div class="nav">
-                <nav class="navbar">
+                <nav class="navbar" id="navbar_links">
                     <li>
                         <a href="#home">#home</a>
                     </li>
@@ -231,8 +231,18 @@
                 });
         });
 
+        const hamburger = document.getElementById("hamburger");
+        const navlinks = document.getElementById('navbar_links');
+
+        hamburger.addEventListener("click", () => {
+            navlinks.classList.toggle("active");
+        });
 
     }
+
+
+
+
 </script>
 
 </html>
