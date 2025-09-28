@@ -51,6 +51,12 @@ h1 span {}
     font-size: 20px;
 }
 
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 nav {
     padding-right: 1vh;
 }
@@ -395,8 +401,14 @@ footer {
         padding-left: 1vh;
     }
 
-    .nav {
+    li {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 3vw;
+        padding-top: 1vh;
     }
 
     .image {
@@ -406,7 +418,6 @@ footer {
     .intro {
         font-size: 1.2rem;
     }
-
 
 
     .paragraphs {
@@ -477,9 +488,6 @@ footer {
 
 /* Phones up to */
 @media (min-width: 576px) {
-    .nav {
-        display: none;
-    }
 
 
     .image {
@@ -491,9 +499,26 @@ footer {
 
     }
 
+    li {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 3vw;
+        padding-top: 1vh;
+    }
+
     .title {
         padding-left: 1vh;
     }
+
+    .hamburger {
+        display: block;
+        margin-right: 3vw;
+        padding-top: 1vh;
+    }
+
 
     .home {
         height: 100vh;
@@ -567,9 +592,8 @@ footer {
 
 /* Medium devices, Tablets, up to */
 @media (min-width: 768px) {
-    .nav {
-        display: none;
-    }
+
+
 
     .image {
         display: none;
@@ -577,6 +601,16 @@ footer {
 
     .intro {
         font-size: 1.2rem;
+    }
+
+    li {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 3vw;
+        padding-top: 1vh;
     }
 
     .home {
@@ -654,6 +688,15 @@ footer {
 
     .home {
         height: 55vh;
+    }
+
+    li {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+
     }
 
     .top_bar {
@@ -779,8 +822,8 @@ footer {
     }
 
     #submit {
-        width: 10vh;
-        height: 5vh;
+         width: 6vw;
+        height: 4vh;
     }
 
     .email_me input:not(#submit),
@@ -804,8 +847,8 @@ footer {
     }
 
     #submit {
-        width: 10vh;
-        height: 5vh;
+        width: 6vw;
+        height: 4vh;
     }
 
 }
