@@ -548,6 +548,16 @@ footer {
     }
 }
 
+
+#about_me, #projects{
+      scroll-margin-top: 10vh;
+      scroll-margin-bottom: 10vh;
+}
+#contact_me{
+   scroll-margin-top: 15vh;
+      scroll-margin-bottom: 15vh;
+}
+
 /* Phones up to */
 @media (min-width: 576px) {
 
@@ -898,7 +908,7 @@ footer {
         right: auto;
         border: none;
         padding: 0px;
-                border-radius: 50vw;
+        border-radius: 50vw;
 
     }
 
@@ -960,6 +970,10 @@ footer {
         font-size: 1rem;
     }
 
+    .about_me {
+        height: 100vh;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -981,9 +995,6 @@ footer {
         padding-right: 30vh;
     }
 
-    .about_me {
-        height: 100vh;
-    }
 
     nav {
         padding-right: 4vh;
