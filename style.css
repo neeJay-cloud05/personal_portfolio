@@ -98,7 +98,7 @@ li {
     padding-left: 10%;
     padding-right: 25%;
     padding-top: 15vh;
-    height: 70vh;
+    height: 100%;
 }
 
 .intro {
@@ -140,6 +140,7 @@ li {
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    margin-top: 10vh;
 }
 
 .about_me_title,
@@ -410,10 +411,7 @@ footer {
 /* Less than */
 @media (max-width: 575.98px) {
 
-    .home {
-        height: 70vh;
-        padding-top: 10vh;
-    }
+    
 
     .title {
         padding-left: 1vh;
@@ -482,7 +480,7 @@ footer {
         font-size: 1.2rem;
     }
 
-
+   
     .paragraphs {
         font-size: 1.1rem;
         padding-left: 4vh;
@@ -571,7 +569,7 @@ footer {
 
     }
 
-
+  
     li {
         font-size: 1.2rem;
     }
@@ -638,10 +636,7 @@ footer {
     }
 
 
-    .home {
-        height: 100vh;
-    }
-
+ 
     .paragraphs {
         font-size: 1.1rem;
         padding-left: 4vh;
@@ -745,8 +740,13 @@ footer {
 
     .navbar.active {
         display: flex;
+        
     }
 
+
+    nav{
+        margin-top: 2vh;
+    }
 
     .top_bar.minimized .title {
         display: none;
@@ -775,10 +775,7 @@ footer {
         padding: 4px;
     }
 
-    .home {
-        height: 50vh;
-
-    }
+    
 
     .paragraphs {
         font-size: 1.1rem;
@@ -848,9 +845,7 @@ footer {
 /* Large Devices desktops and up */
 @media (min-width: 992px) {
 
-    .home {
-        height: 55vh;
-    }
+    
 
     li {
         font-size: 1rem;
@@ -881,7 +876,9 @@ footer {
         flex-direction: row;
 
     }
-
+ nav{
+        margin-top: 0 ;
+    }
     .top_bar.minimized {
         width: auto;
         position: fixed;
@@ -970,9 +967,9 @@ footer {
         font-size: 1rem;
     }
 
-    .about_me {
+    /* .about_me {
         height: 100vh;
-    }
+    } */
 
 }
 
