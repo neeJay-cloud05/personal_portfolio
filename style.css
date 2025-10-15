@@ -143,15 +143,6 @@ li {
     z-index: -1;
 }
 
-.floater1{
-    width: 400px;
-    height: 400px;
-    top: 10%;
-    left: 0;
-    background: linear-gradient(135deg, #0f172a, #3BB3C0);
-    animation-delay: 0s;
-
-}
 
 @keyframes rotate {
     0%, 100% {
@@ -910,7 +901,16 @@ footer {
 /* Large Devices desktops and up */
 @media (min-width: 992px) {
 
-    
+    .floater1{
+        width: 400px;
+        height: 400px;
+        top: 10%;
+        left: 0;
+        background: linear-gradient(135deg, #0f172a, #3BB3C0);
+        animation-delay: 0s;
+
+    }
+
 
     li {
         font-size: 1rem;
