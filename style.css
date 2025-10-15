@@ -11,6 +11,17 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1; 
+        transform:translateY(0);
+    }
+}
+
 h1,
 h2,
 h3 {
@@ -99,7 +110,11 @@ li {
     padding-right: 25%;
     padding-top: 15vh;
     height: 100%;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-in;
+
 }
+
 
 .intro {
     color: aliceblue;
@@ -111,7 +126,20 @@ li {
     justify-content: space-between;
     gap: 2vh;
     width: 4vw;
+
 }
+
+/* gradient  spot in home */
+.linkedin_intro{
+    box-shadow: 20px 90px 200px 100px rgba(40, 94, 165, 0.4);
+}
+
+/* gradient spot near img */
+.img{
+    box-shadow: 500px 400px 100px 50px rgba(40, 94, 165, 0.1);
+
+}
+
 
 .socials_intro i {
     font-size: 1.7rem;
@@ -121,7 +149,7 @@ li {
 .socials_intro i:hover {
     color: #3BB3C0;
     transform: scale(1.2);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in;
 }
 
 .image {}
@@ -131,6 +159,10 @@ li {
     height: auto;
     border: 2px solid #3BB3C0;
     border-radius: 10px;
+
+}
+
+.img:hover{
 
 }
 
@@ -337,29 +369,36 @@ textarea {
 }
 
 .button_div {
-    padding-top: 3vh;
+    padding-top: 2vh;
 }
 
 /* Button */
 .get_touch {
+    position: relative;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1rem;
-    border: none;
+    border: solid 2px #3BB3C0;
     padding: 10px 20px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #7499F6, #3BB3C0);
+    background: transparent;
     color: #fff;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    font-weight: 600;
 
 }
 
 .get_touch:hover {
     cursor: pointer;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     text-shadow: none;
-
+    color: #0f172a;
+    background-color: #3BB3C0;
+    border-color: #3BB3C0;
+    transform: translateY(10px) scale(1.02);
 }
 
 .email_me_div {
