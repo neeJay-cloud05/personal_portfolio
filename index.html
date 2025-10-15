@@ -27,66 +27,68 @@
 <body>
     <div class="container" id="home">
 
-        <div class="top_bar" id="topbar-div">
-            <div class="title"><span>JB</span>Z</div>
-
-            <div class="nav" id="navbar-div">
-                <nav class="navbar" id="navbar_links">
-                    <li>
-                        <a href="#home">#home</a>
-                    </li>
-                    <li>
-                        <a href="#about_me">#about_me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">#projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact_me">#contact_me</a>
-                    </li>
-
-                </nav>
-                <div class="hamburger" id="hamburger">
-                    <i class="fa-solid fa-bars"></i>
+        <div class="home-hero">
+            <div class="top_bar" id="topbar-div">
+                <div class="title"><span>JB</span>Z</div>
+            
+                <div class="nav" id="navbar-div">
+                    <nav class="navbar" id="navbar_links">
+                        <li>
+                            <a href="#home">#home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me">#about_me</a>
+                        </li>
+                        <li>
+                            <a href="#projects">#projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact_me">#contact_me</a>
+                        </li>
+            
+                    </nav>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
+            
+            
             </div>
-
-
+            
+            <div class="content">
+                <div class="home">
+            
+                    <div class="floater floater1"></div>
+                    <div class="floater floater2"></div>
+            
+                    <div class="intro">
+                        <div class="socials_intro">
+                            <div class="github_intro">
+                                <a href="https://github.com/neejay-cloud05" target="_blank"><i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="linkedin_intro">
+                                <a href="https://linkedin.com/in/jeryllzita" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h1>Hey, I'm <span>Jeryll</span>.</h1>
+                        <h3>I'm a <span>Web developer</span></h3>
+                        <h4>Prioritizing efficiency whilst maintaining quality is my goal.</h4>
+                        <div class="button_div">
+                            <button class="get_touch"
+                                onclick="document.getElementById('contact_me').scrollIntoView({behavior:'smooth'});">Get in
+                                touch --></button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="vector"></div>
+            
+                        <img class="img" src="img/2x2.jpg" alt="">
+                    </div>
+            
+                </div>
+                </div>
         </div>
-
-        <div class="content">
-            <div class="home">
-
-                <div class="floater floater1"></div>
-                <div class="floater floater2"></div>
-
-                <div class="intro">
-                    <div class="socials_intro">
-                        <div class="github_intro">
-                            <a href="https://github.com/neejay-cloud05" target="_blank"><i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="linkedin_intro">
-                            <a href="https://linkedin.com/in/jeryllzita" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <h1>Hey, I'm <span>Jeryll</span>.</h1>
-                    <h3>I'm a <span></span></h3>
-                    <h4></h4>
-                    <div class="button_div">
-                        <button class="get_touch"
-                            onclick="document.getElementById('contact_me').scrollIntoView({behavior:'smooth'});">Get in
-                            touch --></button>
-                    </div>
-                </div>
-                <div class="image">
-                    <div class="vector"></div>
-
-                    <img class="img" src="img/2x2.jpg" alt="">
-                </div>
-
-            </div>
 
             <div class="about_me" id="about_me">
                 <div class="about_me_title">
@@ -116,16 +118,18 @@
                 </div>
             </div>
 
+            <!-- <div style="margin-bottom: 12vh;"></div> -->
+
             <div class="projects" id="projects">
                 <div class="project_title">
                     projects
                 </div>
 
                 <div class="my_project">
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
+                    <div class="project">To be added</div>
+                    <div class="project">To be added</div>
+                    <div class="project">To be added</div>
+                    <div class="project">To be added</div>
                 </div>
             </div>
 
@@ -164,7 +168,7 @@
                             <input type="text" name="title" required>
                             <label>Message</label>
                             <textarea name="message" required></textarea>
-                            <input id="submit" type="submit" value="Send">
+                            <input disabled id="submit" type="submit" value="Send">
                         </form>
                     </div>
                 </div>
@@ -206,7 +210,9 @@
 <script type="text/javascript">
     window.onload = function () {
 
-        //  
+        //      
+
+        document.getElementById('submit').disabled = true;
 
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             const notif_div = document.getElementById("notif");

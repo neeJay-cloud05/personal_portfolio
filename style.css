@@ -52,6 +52,8 @@ h3 {
     background: #0D1117;
     border-radius: 10px;
     border: 1px solid #2D343C;
+    z-index: 9999;
+    position: relative;
 }
 
 .top_bar.minimized {
@@ -115,6 +117,23 @@ li {
 
 }
 
+.home-hero{
+
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.home-hero::before{
+    content: "";
+    position: absolute;
+  inset: 0;
+  height: 15%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  filter: blur(20px);
+  pointer-events: none;
+
+}
 
 .intro {
     color: aliceblue;
@@ -250,6 +269,7 @@ li {
 
 }
 
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -257,6 +277,7 @@ li {
     align-items: center;
     color: aliceblue;
 }
+
 
 .my_project {
     display: grid;
@@ -273,7 +294,11 @@ li {
     background: #21293B;
     border-radius: 20px;
     border: 1px solid #2D343C;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(173, 171, 171, 0.5);
 }
 
 .contact_me {
@@ -337,6 +362,19 @@ textarea {
     margin-top: 5vh;
     width: 20vh;
     height: 5vh;
+}
+
+#submit:disabled {
+  opacity: 0.5; 
+  cursor: not-allowed; 
+  color: #666; 
+      text-shadow: none;
+
+}
+#submit:hover {
+  cursor: not-allowed; 
+    /* opacity: 0.9; */
+    text-shadow: none;
 }
 
 .notif {
@@ -434,11 +472,6 @@ textarea {
     cursor: pointer;
 }
 
-#submit:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    text-shadow: none;
-}
 
 footer {
     display: block;
@@ -920,10 +953,13 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 5vh;
+        /* margin-top: 5vh; */
         background: #0D1117;
         border-radius: 10px;
         border: 1px solid #2D343C;
+    z-index: 9999;
+
+  
     }
 
     .hamburger {
