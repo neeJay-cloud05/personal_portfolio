@@ -67,7 +67,7 @@ h3 {
     justify-self: center;
     justify-items: center;
     align-items: center;
-
+    z-index: 1;
 }
 
 .top_bar.minimized .title {
@@ -130,15 +130,45 @@ li {
 }
 
 /* gradient  spot in home */
-.linkedin_intro{
+/* .linkedin_intro{
     box-shadow: 20px 90px 200px 100px rgba(40, 94, 165, 0.4);
+} */
+
+.floater{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    animation: rotate 30s ease-in-out infinite;
+    z-index: -1;
 }
 
+.floater1{
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 0;
+    background: linear-gradient(135deg, #0f172a, #3BB3C0);
+    animation-delay: 0s;
+
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+        transform: translate(50px, -50px) rotate(120deg);
+    }
+    66% {
+        ransform: translate(-30px, 30px) rotate(240deg);
+    }
+}
 /* gradient spot near img */
-.img{
+/* .img{
     box-shadow: 500px 400px 100px 50px rgba(40, 94, 165, 0.1);
 
-}
+} */
 
 
 .socials_intro i {
@@ -159,10 +189,6 @@ li {
     height: auto;
     border: 2px solid #3BB3C0;
     border-radius: 10px;
-
-}
-
-.img:hover{
 
 }
 
