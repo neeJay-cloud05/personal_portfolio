@@ -94,7 +94,7 @@
                 <div class="about_me_title">
                     about_me
                 </div>
-                <div class="paragraphs">
+                <div class="paragraphs with_animation_scroll">
                     <p>Hi! I'm Jeryll Zita, a web developer from Bulacan, Philippines. I specialize in backend
                         development with PHP and Laravel, but I'm also comfortable with frontend work and adapting to
                         various tools as needed. </p>
@@ -102,10 +102,10 @@
                         connect!</p>
                 </div>
 
-                <div class="prog_and_tools">
+                <div class="prog_and_tools with_animation_scroll">
                     Progra<span>mming & Tools</span>
                 </div>
-                <div class="skills">
+                <div class="skills with_animation_scroll">
                     <div class="tools">
                         <div class="s">PHP</div>
                         <div class="s">MySql</div>
@@ -125,7 +125,7 @@
                     projects
                 </div>
 
-                <div class="my_project">
+                <div class="my_project with_animation_scroll">
                     <div class="project">To be added</div>
                     <div class="project">To be added</div>
                     <div class="project">To be added</div>
@@ -258,7 +258,27 @@
                 top_bar.classList.remove('minimized');
 
             }
+
+      
         });
+
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.with_animation_scroll').forEach(el =>{
+            observer.observe(el);
+        });
+
 
     }
 
