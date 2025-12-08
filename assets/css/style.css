@@ -1208,6 +1208,10 @@ footer {
         padding-left: 10vh;
         padding-right: 10vh;
     }
+    .contact_me_page{
+        gap: 5vw;
+    }
+
 }
 
 /* for zooming out as well */
@@ -1218,6 +1222,5 @@ footer {
         height: 3vh;
     }
 
-
-
+    
 }
